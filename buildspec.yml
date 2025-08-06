@@ -11,7 +11,9 @@ phases:
     commands:
       - echo Building the React app...
       - npm run build
+
 artifacts:
   files:
-    - '**/*'
-  base-directory: build
+    - '**/*'          # include everything in the project folder
+  base-directory: '.'  # use current directory (root)
+
